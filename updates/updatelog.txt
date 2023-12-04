@@ -1,0 +1,91 @@
+v2.6 24 apr 2023:
+Am rezolvat mai multe buguri:
+    *cand dadeam play la o piesa indexul ramanea acelasi, pe cand trebuia updatat ca atunci cand urmeaza piesa sa fie in ordinea corecta
+    *ICONITA FAVORITE rezolvata
+
+v2.5 18 apr 2023:
+Am adaugat filtre pentru cautare -> genuri pentru a gasi melodii mai usor.
+Am rezolvat partea cu piesele. Acum orice piesa poate fi ascultata 
+
+v2.4 15 apr 2023: 
+Am facut logo-ul aplicatiei.
+Am modificat design-ul paginii de autentificare si inregistrare.
+Am modificat design-ul paginii de cautare piese.
+
+v2.3: 11 ian 2023:
+Am adaugat ajax pentru a interschimba meniurile:
+acasa - cautare - biblioteca
+
+Am adaugat optiunea de cautare a pieselor in baza de date.
+
+v2.2: 6 ian 2023:
+Am construit baza de date pentru:
+-melodi
+-albume
+-playlisturi
+
+Am facut o functie in php care afiseaza in html toate piesele unui album.
+
+function showSongsFromAlbum($conn, $idAlbum);
+
+v2.1: 3 ian 2023:
+Am implementat butonul de play/pause si butoanele de forward, backward + backend ca sa functioneze normal.
++ melodiile se deruleaza automat dupa ce se termina 
++ daca apesi pe spatiu pornesti/opresti melodia
+
+TODO: bara de progres la piesa si sa poti selecta de unde vrei melodia
+
+v2.0: la scoala
+Am schimbat designul la site putin.
++ sectiunea de categorii
+
+v1.9: 8 nov 2022:
+Am terminat scriptul de autentificare prin realizarea sesiunii odata cu conectarea corecta.
+Am adaugat optiunea de deconectare.
+
+v1.8: 7 nov 2022:
+Am facut scriptul pentru autentificare adaugand:
+functia loginUser();
+scriptul login.inc.php;
+
+v1.7: 6 nov 2022:
+Am terminat scriptul pentru inregistrare singup.inc.php.
+Fiecare utilizator va fi inregistrat in baza de date.
+
+v1.6: 5 nov 2022: 
+Baza de date $appdb$ a fost creata in localhost/phpmyadmin si are un singur tabel $users$.
+Am inceput pagina de signup separata.
+Scriptul pentru conectare la baza de date este in dbh.inc.php.
+
+TODO: Trebuie facut scriptul pentru a adauga o noua inregistrare in baza de date cu php.
+
+v1.5: 1 nov 2022: 
+Am adaugat jquery si acum paginile pot fi schimbate in timp ce melodia inca canta.
+Pagina de signup poate fi accesata fara sa se intrerupa piesa. (Va fi schimbata mai tarziu in propria ei pagina, a fost adaugat doar ca test)
+
+TODO: de cautat api pentru piese de pe youtube sau spotify
+
+v1.4: 29 oct 2022: 
+Am inlocuit paginile html cu php pentru a face legaturile mai usor.
+Pagina de autentificare a inceput.
+Trebuie sa gasesc o metoda de a modifica pagina dinamic ca sa pot asculta muzica in timp ce schimb paginile.
+AJAX sau CSS data-switcher (cel mai probabil AJAX)
+
+v1.3: 20 oct 2022: 
+Am modificat bara de login/logout ca sa fie sticky. 
+Am adaugat iconitele font awesome la meniul din stanga.
+
+v1.2: 19 oct 2022: 
+Am adaugat layoutul pe randuri si coloane pentru carduri.
+Fiecare card are o clasa speciala care poate fi accesata cu javascript mai tarziu.
+
+v1.1: 16 sept 2022: 
+Incepe designul paginii. Am adaugat:
+-leftNav
+-rightNav
+-topNav
+-playNav
+
+-clasa card
+
+v1.0: 11 sept 2022: Am construit prima pagina a atestatului.
