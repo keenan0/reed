@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --first: #F26101;
+    --second: #FFFFFF;
+    --third: #EBE3CB;
+    --fourth: #A0AA8F;
+    --fifth: #46483C;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito_Sans/NunitoSans-Black.ttf')
+}
+
+@font-face {
+    font-family: 'Nunito Light';
+    src: url('../fonts/Nunito_Sans/NunitoSans-Light.ttf')
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato/Lato-Black.ttf')
+}
+
+@font-face {
+    font-family: 'Lato Light';
+    src: url('../fonts/Lato/Lato-Light.ttf');
+}
+
+@font-face {
+    font-family: 'nabla';
+    src: url('../fonts/Nabla/static/Nabla-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('../fonts/Roboto/Roboto-Light.ttf');
+}
+
+body {
+    font-family: 'roboto';
+    color: white;
+    overflow: hidden;
+    user-select: none;
+}
+
+p {
+    font-family: 'Lato Light';
+    text-transform: uppercase;
+    transition: all 1s;
+    cursor:pointer;
+}
+
+p:hover .hidden {
+    display: inline;
+}
+
+p .text:hover {
+    color:black;
+}
+
+.title {
+    text-transform:uppercase;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.centerNew {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.btn {
+    font-family: 'Lato Light';
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-style: solid;
+    text-transform: uppercase;
+    margin-top: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    border-color: black;
+    background-color: white;
+    color: black;
+    padding: 12px;  
+    font-size: 16px;
+}
+
+.hidden {
+    display: none;
+}
+
+#musicBackground {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.topleft {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.topright{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.bottomright{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.content {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-align: center;
+}
+
+/*.content h1 {
+    padding-top: 10rem;
+}*/
